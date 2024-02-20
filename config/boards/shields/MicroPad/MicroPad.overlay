@@ -1,20 +1,20 @@
-/{
+/ {
     chosen {
-        zmk,kscan = default_kscan;
+        zmk,kscan = &default_kscan;
     };
 
     default_kscan;kscan{
-        compatible = "zmk, kscan-gpio-direct";
+        compatible = "zmk,kscan-gpio-direct";
         label = "default_kscan";
 
 
         input-gpios =
-            <seeeduino_xiao_ble D3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <seeeduino_xiao_ble D4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <seeeduino_xiao_ble D5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <seeeduino_xiao_ble D8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <seeeduino_xiao_ble D9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
-            <seeeduino_xiao_ble D10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            <&seeeduino_xiao_ble D3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+            <&seeeduino_xiao_ble D4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+            <&seeeduino_xiao_ble D5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+            <&seeeduino_xiao_ble D8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+            <&seeeduino_xiao_ble D9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,
+            <&seeeduino_xiao_ble D10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
     };
 };
 
